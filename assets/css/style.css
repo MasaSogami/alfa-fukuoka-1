@@ -78,8 +78,8 @@ button {
   display: block;
   border: none;
   margin: 0 auto;
-  background-color: #ffd700;
-  color: #000;
+  background-color: #dda520;
+  color: #fff;
   width: 287px;
   height: 55px;
 }
@@ -292,7 +292,7 @@ button {
 }
 
 .section-title--keycolor {
-  background-color: #00f8ff;
+  background-color: #ffd700;
 }
 
 .section-title--story {
@@ -316,7 +316,7 @@ button {
   left: calc(50% - 95px);
   display: block;
   content: '';
-  background-color: #0000ff;
+  background-color: #fff;
   height: 2.6px;
   width: 190px;
 }
