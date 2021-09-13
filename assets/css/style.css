@@ -288,7 +288,7 @@ button {
 }
 
 .section-title--keycolorlight .section-title__stage {
-  color: #fff;
+  color: #fff8dc;
 }
 
 .section-title--keycolor {
@@ -430,7 +430,7 @@ button {
 }
 
 .stage-column__container + .stage-column__container {
-  border-top: 2px solid #fff;
+  border-top: 2px solid #fff8dc;
 }
 
 .answer {
