@@ -336,8 +336,8 @@ button {
   display: block;
   text-decoration: none;
   cursor: pointer;
-  background-color: #cd853f;
-  color: #ffd700;
+  background-color: #ffd700;
+  color: #000;
   font-size: 24px;
   line-height: 1.54167;
   text-align: center;
@@ -356,7 +356,7 @@ button {
   position: absolute;
   top: calc(50% - 12px);
   right: 15px;
-  fill: #fff;
+  fill: #00;
   width: 12px;
   height: 24px;
 }
