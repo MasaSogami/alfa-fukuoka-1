@@ -274,7 +274,7 @@ button {
   line-height: 1.75;
   text-align: center;
   padding: 9px 20px;
-  background-color: #cd853f;
+  background-color: #1500eb;
   margin: 0 -20px 20px -20px;
 }
 
@@ -284,15 +284,15 @@ button {
 }
 
 .section-title--keycolorlight {
-  background-color: #ffd700;
+  background-color: #15f000;
 }
 
 .section-title--keycolorlight .section-title__stage {
-  color: #fff;
+  color: #f500ee;
 }
 
 .section-title--keycolor {
-  background-color: #cd853f;
+  background-color: #00f8ff;
 }
 
 .section-title--story {
@@ -307,7 +307,7 @@ button {
   line-height: 1.06667;
   margin: 0;
   padding-bottom: 15px;
-  color: #cd853f;
+  color: #e65500;
 }
 
 .section-title--border::after {
@@ -316,7 +316,7 @@ button {
   left: calc(50% - 95px);
   display: block;
   content: '';
-  background-color: #fff;
+  background-color: #8000e0;
   height: 2.6px;
   width: 190px;
 }
