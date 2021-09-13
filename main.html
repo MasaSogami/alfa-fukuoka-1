@@ -85,10 +85,9 @@ Youtube貼り付けここまで -->
 
       </div>
       <!-- STAGE1　ここまで -->
-
-      <!-- STAGE2　ここから -->
       
-      <div v-if="next['stage1']" id="sectionStage2" class="stage">
+      <!-- STAGE2　ここから -->
+        <div v-if="next['stage1']" id="sectionStage2" class="stage">
         <section>
           <div class="section">
             <div class="container">
@@ -97,46 +96,54 @@ Youtube貼り付けここまで -->
                 すぐに目に入ったのは黒板にある４つの謎。<br>
                 これらを解くことで、きっと次のステップに繋がるはずだ！</p>
 
-                  <!-- STAGE2問題セクション　ここから -->
-              <div class="container">
-                  <figure class="image__container">
-                    <img src="assets/images/stage2.png" alt="">
-                  </figure>
-                  <!-- STAGE2問題セクション　ここまで -->
+        
+            <!-- STAGE2 問題セクション　ここから -->
+            
+            <div class="container">
+              <figure class="image__container">
+                <img src="assets/images/stage2.png" alt="">
+              </figure>
                 
-                <!-- STAGE2解答入力セクション　ここから-->
+ <!--  YouTube貼り付け
+              <div class="youtube__container">
+                <div class="youtube">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/IRyJe-0Uie0?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+              </div>
+Youtube貼り付けここまで -->
                 
+            </div>
+          </div>
+        </section>
+        <!-- STAGE2問題セクション　ここまで -->
+
+        <!-- STAGE2解答入力セクション　ここから -->
         <section class="section bg-color--keycolor">
           <div class="container">
             <h2 class="section-title"><span class="section-title__stage">第二関門</span>解答を入力</h2>
             
-                    
-                  <answer-input v-bind:correct="correctAnswer['stage2']['q1']" v-on:answer-input="answerInput($event, 'stage2', 1)"></answer-input>
-                
-                  <a class="link-hint" href="hint2.html" target="hint2">助けを借りる ></a>
-                  <!-- STAGE2解答入力セクション　ここまで -->
-                </div><!-- /.column -->
-                
+            <answer-input v-bind:correct="correctAnswer['stage2']['q1']" v-on:answer-input="answerInput($event, 'stage2', 1)"></answer-input>
 
-
-              </div><!-- /.row -->
-
-            </div>
+            <a class="link-hint" href="hint2.html" target="hint2">助けを借りる ></a>
           </div>
         </section>
+        <!-- STAGE2解答入力セクション　ここまで -->
 
         <!-- STAGE2クリア画面　ここから -->
+        
         <section v-if="clear['stage2']" v-bind:class="{isClear:clear['stage2']}"  class="section section--clear bg-color--gray">
           <div class="container">
             <div class="clear-message">
-              <div class="clear-message__title">第二関門　突破！</div>
-              <div class="clear-message__content">黒板の指示に従い、<br>
-                次のステージの謎を解こう！</div>
-                <button v-on:click="nextStage('stage2')" onclick="location.href='#sectionStage3'" class="clear-message__btn btn">次へ進む<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
+              <div class="clear-message__title">第二関門  突破！</div>
+              <div class="clear-message__content">扉の鍵が開いた！<br>
+                さぁ、お宝を見つけるためにさらに奥に進もう！<br>
+                ３つステージの謎をとき、暗号を見つけ出そう！</div>
+              <button v-on:click="nextStage('stage2')" onclick="location.href='#sectionStage3'" class="clear-message__btn btn">次へ進む<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
             </div>
           </div>
         </section>
         <!-- STAGE2クリア画面　ここまで -->
+
       </div>
       <!-- STAGE2　ここまで -->
         
@@ -200,64 +207,68 @@ Youtube貼り付けここまで -->
 
       </div>
       <!-- STAGE3　ここまで -->
-        
+                  
       <!-- STAGE4　ここから -->
-      
-      <div v-if="next['stage3']" id="sectionStage4" class="stage">
+        <div v-if="next['stage3']" id="sectionStage4" class="stage">
         <section>
           <div class="section">
             <div class="container">
               <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">第四関門</span>黒板に書かれている謎を解け！</h2>
-              <p class="text-center">ステージ！<br>
+              <p class="text-center">家庭科室に入ることができた！<br>
                 すぐに目に入ったのは黒板にある４つの謎。<br>
                 これらを解くことで、きっと次のステップに繋がるはずだ！</p>
-            </div>
-          </div>
-          <div class="stage-column__container section bg-color--keycolor">
+
+        
+            <!-- STAGE4 問題セクション　ここから -->
+            
             <div class="container">
-              <h2 class="section-title"><span class="section-title__stage">第四関門</span>解答を入力</h2>
-             
-              <div class="row">
-
-                <!-- STAGE4　ここから -->
-                <div class="column">
-                  <!-- STAGE4問題セクション　ここから -->
-                  <figure class="image__container">
-                    <img src="assets/images/stage4.png" alt="">
-                  </figure>
-                  <!-- STAGE4問題セクション　ここまで -->
-                  <!-- STAGE4解答入力セクション　ここから -->
-                  <answer-input v-bind:correct="correctAnswer['stage4']['q1']" v-on:answer-input="answerInput($event, 'stage4', 1)"></answer-input>
-                  <a class="link-hint" href="hint4.html" target="hint4">助けを借りる ></a>
-                  <!-- STAGE4解答入力セクション　ここまで -->
-                </div><!-- /.column -->
-               
-
-
-              </div><!-- /.row -->
-
+              <figure class="image__container">
+                <img src="assets/images/stage4.png" alt="">
+              </figure>
+                
+ <!--  YouTube貼り付け
+              <div class="youtube__container">
+                <div class="youtube">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/IRyJe-0Uie0?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+              </div>
+Youtube貼り付けここまで -->
+                
             </div>
           </div>
         </section>
+        <!-- STAGE4問題セクション　ここまで -->
+
+        <!-- STAGE4解答入力セクション　ここから -->
+        <section class="section bg-color--keycolor">
+          <div class="container">
+            <h2 class="section-title"><span class="section-title__stage">第四関門</span>解答を入力</h2>
+            
+            <answer-input v-bind:correct="correctAnswer['stage4']['q1']" v-on:answer-input="answerInput($event, 'stage4', 1)"></answer-input>
+
+            <a class="link-hint" href="hint4.html" target="hint4">助けを借りる ></a>
+          </div>
+        </section>
+        <!-- STAGE4解答入力セクション　ここまで -->
 
         <!-- STAGE4クリア画面　ここから -->
+        
         <section v-if="clear['stage4']" v-bind:class="{isClear:clear['stage4']}"  class="section section--clear bg-color--gray">
           <div class="container">
             <div class="clear-message">
-              <div class="clear-message__title">第四関門　突破！</div>
-              <div class="clear-message__content">黒板の指示に従い、<br>
-                次のステージの謎を解こう！</div>
-                <button v-on:click="nextStage('stage4')" onclick="location.href='#sectionStage5'" class="clear-message__btn btn">次へ進む<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
+              <div class="clear-message__title">第三関門  突破！</div>
+              <div class="clear-message__content">扉の鍵が開いた！<br>
+                さぁ、お宝を見つけるためにさらに奥に進もう！<br>
+                ３つステージの謎をとき、暗号を見つけ出そう！</div>
+              <button v-on:click="nextStage('stage4')" onclick="location.href='#sectionStage5'" class="clear-message__btn btn">次へ進む<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
             </div>
           </div>
         </section>
         <!-- STAGE4クリア画面　ここまで -->
+
       </div>
       <!-- STAGE4　ここまで -->
-      
-      
-                                                                                                                          
-
+          
       <!-- STAGE5　ここから -->
       <div v-if="next['stage4']" id="sectionStage5" class="stage">
 
