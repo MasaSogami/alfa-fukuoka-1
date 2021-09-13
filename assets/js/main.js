@@ -32,6 +32,9 @@ const app = Vue.createApp({
         },
         stage4: {
           q1: 'ダイヤ',
+        },
+        stage5: {
+          q1: 'ユウヤミ',
         }
       },
 
@@ -54,6 +57,9 @@ const app = Vue.createApp({
         ],
         stage4: [
           false,
+        ],
+        stage5: [
+          false,
         ]
       },
 
@@ -63,6 +69,7 @@ const app = Vue.createApp({
         stage2: false,
         stage3: false,
         stage4: false,
+        stage5: false,
       },
 
       /* 次のステージを表示するかどうか
