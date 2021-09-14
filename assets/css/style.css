@@ -70,7 +70,7 @@ input[type=text] {
 }
 
 ::placeholder {
-  color: #8b4513;
+  color: #000;
 }
 
 button {
@@ -79,7 +79,7 @@ button {
   border: none;
   margin: 0 auto;
   background-color: #daa520;
-  color: #000;
+  color: #fff8dc;
   width: 287px;
   height: 55px;
 }
@@ -337,7 +337,7 @@ button {
   text-decoration: none;
   cursor: pointer;
   background-color: #daa520;
-  color: #000;
+  color: #fff8dc;
   font-size: 24px;
   line-height: 1.54167;
   text-align: center;
@@ -356,7 +356,7 @@ button {
   position: absolute;
   top: calc(50% - 12px);
   right: 15px;
-  fill: #00;
+  fill: #fff;
   width: 12px;
   height: 24px;
 }
@@ -447,7 +447,7 @@ button {
 }
 
 .link-hint {
-  background-color: #000;
+  background-color: #8b4513;
   text-align: center;
   display: block;
   margin-top: 20px;
