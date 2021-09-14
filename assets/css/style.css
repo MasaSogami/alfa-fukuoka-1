@@ -62,15 +62,15 @@ input[type=text] {
 }
 
 :-ms-input-placeholder {
-  color: #e6e6e6;
+  color: #000;
 }
 
 ::-ms-input-placeholder {
-  color: #e6e6e6;
+  color: #000;
 }
 
 ::placeholder {
-  color: #e6e6e6;
+  color: #000^[;
 }
 
 button {
