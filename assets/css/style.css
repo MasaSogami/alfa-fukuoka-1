@@ -264,7 +264,7 @@ button {
 }
 
 .sub-title__bg {
-  background-color: #;
+  background-color: #fff8dc;
   padding-left: 1rem;
   padding-right: 1rem;
 }
@@ -447,6 +447,7 @@ button {
 }
 
 .link-hint {
+  background-color: #000;
   text-align: center;
   display: block;
   margin-top: 20px;
