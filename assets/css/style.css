@@ -337,7 +337,7 @@ button {
   text-decoration: none;
   cursor: pointer;
   background-color: #daa520;
-  color: #ff0000;
+  color: #000;
   font-size: 24px;
   line-height: 1.54167;
   text-align: center;
@@ -356,7 +356,7 @@ button {
   position: absolute;
   top: calc(50% - 12px);
   right: 15px;
-  fill: #ff0000;
+  fill: #000;
   width: 12px;
   height: 24px;
 }
